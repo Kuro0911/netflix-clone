@@ -14,10 +14,15 @@ function Nav() {
             window.removeEventListener("scroll");
         };
     }, []);
+    const handleClick1 = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <div className={`nav ${show && "nav-kuro"}`}>
             <img 
                 className="nav-logo"
+                onClick={() => handleClick1()}
                 src="https://lh3.googleusercontent.com/yRzaF4RP7GL558uptij8ySaCBmxHCa4m1M5ian6qC5cwqTSIECuqOVLVLRatXkgfSQFqaPX4V2inoZouoCEOPScLrT4FYzIpEgLwqug_EVn8QvWJF1Www9wrxyn4-PjHVRr2-XO9fA=w474-h148-p-k" 
                 alt="Netflix"
             />

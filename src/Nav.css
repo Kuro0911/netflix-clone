@@ -18,9 +18,11 @@
   width: 140px;
   object-fit: contain;
   margin-top: -6px;
+  cursor: pointer;
 }
 
 .nav-profile {
+  cursor: pointer;
   position: fixed;
   width: 50px;
   right: 20px;
