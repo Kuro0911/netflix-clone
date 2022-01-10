@@ -23,6 +23,9 @@ function Banner() {
     function truncate(str , n){
         return str?.length > n ? str.substr(0, n-1) + "..." : str;
     }
+    const handleClick = () => {
+        window.open("https://www.netflix.com/in/");
+    };
     return (
         <header className="banner"
             style={{
@@ -36,8 +39,8 @@ function Banner() {
             <div className="banner-contents">
                 <h1 className="banner-title"> {movie?.title ||movie?.name ||movie?.original_name} </h1>
                 <div className="banner-btns">
-                    <button className="banner-btn">Play</button>
-                    <button className="banner-btn">My List</button>
+                    <button className="banner-btn" onClick={() => handleClick()}>Play</button>
+                    <button className="banner-btn" onClick={() => handleClick()}>My List</button>
                 </div>
                 <h1 className="banner-desc">
                     {truncate(movie?.overview , 200)}
